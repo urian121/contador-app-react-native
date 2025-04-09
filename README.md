@@ -17,8 +17,7 @@ Este es un pequeño proyecto en **React Native** que implementa un contador con 
 - Componentes personalizados (`FAB` flotantes)
 
 ## 📸 Vista previa
-![Resultado Final](https://raw.githubusercontent.com/urian121/contador-app-react-native/refs/heads/master/contador-app.png)
-> *Agregá una captura de pantalla aquí si querés mostrar el diseño visual.*
+<img src="https://raw.githubusercontent.com/urian121/contador-app-react-native/refs/heads/master/contador-app.png" alt="Resultado Final" width="400"/>
 
 ## ▶️ Cómo correr el proyecto
 
