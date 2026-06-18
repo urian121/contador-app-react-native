@@ -33,5 +33,9 @@ export const styles = StyleSheet.create({
     positionCenter: {
         textAlign: 'center',
     },
+    textLabel: {
+        color: 'white',
+        fontSize: 25,
+    },
 
 });

@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
 import { useState } from 'react';
 import Fab from './components/Fab';
-import { styles } from './styles';
+import { styles } from './assets/styles/styles';
 
 
 export default function App() {

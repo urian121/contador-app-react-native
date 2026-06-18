@@ -1,16 +1,19 @@
 import { Text, Pressable } from 'react-native';
-import { styles } from '../styles';
+import { styles } from "../assets/styles/styles";
 
+// Obtener el estilo de posición basado en la prop 'position'
 const getPositionStyle = (position) => {
   if (position === 'center') return styles.positionCenter;
   if (position === 'right') return styles.positionRight;
   return styles.positionLeft;
 };
 
+// Obtener el estilo de opacidad basado en si el botón está presionado
 const getOpacityStyle = (pressed) => ({
   opacity: pressed ? 0.7 : 1,
 });
 
+// Componente FAB (Floating Action Button)
 export default function FAB({
   label,
   onPress,
@@ -20,7 +23,7 @@ export default function FAB({
 }) {
   return (
     <Pressable
-       disabled={disabled}
+      disabled={disabled}
       style={({ pressed }) => [
         styles.floatingButton,
         getPositionStyle(position),
@@ -30,7 +33,7 @@ export default function FAB({
       onPress={onPress}
       onLongPress={onLongPress}
     >
-      <Text style={{ color: 'white', fontSize: 25 }}>{label}</Text>
+      <Text style={styles.textLabel}>{label}</Text>
     </Pressable>
   );
 }

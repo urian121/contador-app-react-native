@@ -2,6 +2,7 @@
   "expo": {
     "name": "contador-app-react-native",
     "slug": "contador-app-react-native",
+    "description": "Una aplicación de contador simple construida con React Native y Expo.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +24,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-asset"]
   }
 }
