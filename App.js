@@ -8,13 +8,18 @@ import { styles } from './assets/styles/styles';
 export default function App() {
   const [count, setCount] = useState(0);
 
+  // Funcion para aumentar el contador
   const aumentar = () => {
     setCount(count + 2);
   };
+
+  // Funcion para disminuir el contador
   const disminuir = () => {
     if (count === 0) return;
-    setCount(count => count - 2);
+    setCount((count) => count - 2);
   };
+
+  // Funcion para resetear el contador
   const reset = () => {
     setCount(0);
   };
@@ -22,7 +27,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 40, fontWeight: 700 }}>Contador con </Text>
-      <Text style={{ fontSize: 60, fontWeight: 900, color: '#087ea4' }}>React Native</Text>
+      <Text style={{ fontSize: 60, fontWeight: 900, color: "#087ea4" }}>
+        React Native
+      </Text>
       <Text style={styles.textHuge}>{count}</Text>
 
       <Fab
@@ -32,7 +39,12 @@ export default function App() {
         position="right"
       />
 
-      <Fab label="Reset" onPress={reset} position="center" disabled={count === 0} />
+      <Fab
+        label="Reset"
+        onPress={reset}
+        position="center"
+        disabled={count === 0}
+      />
 
       <Fab
         label="-2"
